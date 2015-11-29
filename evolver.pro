@@ -4,17 +4,17 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui widgets
 
 TARGET = evolver
 TEMPLATE = app
 
-INCLUDEPATH += /usr/include/opencv
+INCLUDEPATH += /usr/local/Cellar/opencv/2.4.12/include
 
-LIBS += -L/usr/lib \
-        -lcxcore \
-        -lcv \
-        -lhighgui
+LIBS += -L/usr/local/Cellar/opencv/2.4.12/lib \
+        -lopencv_core \
+#        -lcv \
+        -lopencv_highgui
 
 SOURCES += main.cpp\
         mainwindow.cpp \

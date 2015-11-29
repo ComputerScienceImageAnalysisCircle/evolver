@@ -28,7 +28,6 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->graphicsView->setScene(scene);
     ui->graphicsView->show();
 
-
     //inicjalizacja populacji
     this->pop = new populacja(100);
     pop->generowanieLosowejPopulacji();

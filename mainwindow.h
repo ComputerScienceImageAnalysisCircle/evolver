@@ -12,8 +12,8 @@
 #include <antena.h>
 #include <about.h>
 #include <QFileDialog>
-#include <cv.h>
-#include "highgui.h"
+#include <opencv/cv.h>
+#include <opencv/highgui.h>
 
 using namespace std;
 

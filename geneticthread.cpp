@@ -7,7 +7,7 @@ void GeneticThread::run()
 
     QTimer timer;
     connect(&timer, SIGNAL(timeout()), this, SLOT(timerHit()), Qt::DirectConnection);
-    timer.setInterval(50);
+    timer.setInterval(300);
     timer.start();   // puts one event in the threads event queue
     exec();
     timer.stop();
